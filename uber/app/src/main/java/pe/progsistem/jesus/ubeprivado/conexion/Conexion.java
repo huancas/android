@@ -1,5 +1,6 @@
 package pe.progsistem.jesus.ubeprivado.conexion;
 //kevin app
+//app shared with github
 public class Conexion{
   public static final String IP = "192.168.1.17";
    // public static final String IP = "softjh.com";
