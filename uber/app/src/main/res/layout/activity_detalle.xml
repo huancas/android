@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetalleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="INFORME 777" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Cantidad Personas"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerCantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/tipocantidad_arrays"
+                    android:prompt="@string/tipocantidad_pro" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Precio: "
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvPrecio"
+                    android:text="10"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical"
+
+            android:id="@+id/LinearLay">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Viaje Programado"/>
+                <Switch
+                    android:id="@+id/simpleSwitch"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/llProg"
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <!--   Fecha -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:text="Fecha de Inicio"
+                   android:textSize="17sp"
+                   android:textStyle="bold" />
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/et_mostrar_fecha_picker"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:ems="10"
+                       android:inputType="textPersonName"
+
+                       android:text="" />
+                   <ImageButton
+                       android:id="@+id/ib_obtener_fecha"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@mipmap/ic_calen"
+                       tools:ignore="ContentDescription" />
+
+
+
+               </LinearLayout>
+               <!--  fin de fecha -->
+               <!--   Hora -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:text="Hora Inicio"
+                   android:textSize="17sp"
+                   android:textStyle="bold" />
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/et_mostrar_hora_picker"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:ems="10"
+                       android:inputType="textPersonName"
+                       android:text="" />
+                   <ImageButton
+                       android:id="@+id/ib_obtener_hora"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="center"
+                       android:src="@mipmap/ic_hora"
+                       tools:ignore="ContentDescription" />
+            </LinearLayout>
+               <!--  fin de hora -->
+          </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvSend"
+                android:layout_height="wrap_content"
+                android:text="Solicitar"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

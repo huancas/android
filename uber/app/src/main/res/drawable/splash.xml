@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  android:gravity="fill_horizontal" -->
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@color/colorPrimary"/>
+
+        <item  android:gravity="center_vertical">
+
+            <bitmap
+
+             android:src="@drawable/icono_auto"/>
+
+        </item>
+
+    </layer-list>

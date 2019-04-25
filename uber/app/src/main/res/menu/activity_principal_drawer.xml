@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_user2"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_publicaciones"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Publicaciones" />
+        <item
+            android:id="@+id/nav_mipub"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mi Publicacion" />
+        <item
+            android:id="@+id/nav_fotos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mis Fotos" />
+        <item
+            android:id="@+id/nav_atencion"
+            android:icon="@mipmap/ic_star"
+            android:title="Mis Records" />
+        <item
+            android:id="@+id/nav_promociones"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Promociones" />
+        <item
+            android:id="@+id/nav_sede"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sedes" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_logout"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistroChofer">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Registro De Usuarios"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <!--  Imagen  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="196dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Foto de Perfil"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="167dp"
+                    android:layout_height="142dp" />
+
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="Elegir imagen" />
+
+
+            </LinearLayout>
+            <!--  fin de Imagen -->
+            <!--  editext y texview al lado  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Nombre"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="329dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="" />
+
+            </LinearLayout>
+            <!--  /editext y texview al lado  -->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Genero"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/spinnersexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/sexo_arrays"
+                    android:prompt="@string/sexo_prompt" />
+
+
+            </LinearLayout>
+
+
+
+            <!--   Fecha -->
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:text="Fecha de Nacimiento"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_mostrar_fecha_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+                <ImageButton
+                    android:id="@+id/ib_obtener_fecha"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_calen"
+                    tools:ignore="ContentDescription" />
+
+
+
+            </LinearLayout>
+            <!--  fin de fecha -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Celular"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtCelular"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Celular 2"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtCelular2"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Username"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtUsername"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Email"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Clave"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Documentos"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <!--  Imagen  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Foto soat Frontal"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivSoatF"
+                    android:layout_width="167dp"
+                    android:layout_height="142dp" />
+
+
+                <Button
+                    android:id="@+id/btnSoatF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="Elegir imagen" />
+
+
+            </LinearLayout>
+            <!--  fin de Imagen -->
+                <!--  Imagen  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="45dp"
+
+                        android:text="Foto soat posterior"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivSoatP"
+                        android:layout_width="167dp"
+                        android:layout_height="142dp" />
+
+
+                    <Button
+                        android:id="@+id/btnSoatP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="Elegir imagen" />
+
+
+                </LinearLayout>
+                <!--  fin de Imagen -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--  Imagen  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Foto Tarjeta de Propiedad"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivTarjeta"
+                        android:layout_width="167dp"
+                        android:layout_height="142dp" />
+
+
+                    <Button
+                        android:id="@+id/btnTarjeta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="Elegir imagen" />
+
+
+                </LinearLayout>
+                <!--  fin de Imagen -->
+                <!--  Imagen  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="45dp"
+
+                        android:text="Foto de Licencia"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivLicencia"
+                        android:layout_width="167dp"
+                        android:layout_height="142dp" />
+
+
+                    <Button
+                        android:id="@+id/btnLicencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="Elegir imagen" />
+
+
+                </LinearLayout>
+                <!--  fin de Imagen -->
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Subir"
+                android:id="@+id/btnSubir" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

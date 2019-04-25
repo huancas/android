@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RecuperacionActivity">
+
+
+    <TextView
+        android:id="@+id/tvAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Nombre"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!--  editext y texview al lado  -->
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_marginTop="10dp"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+    >
+
+
+
+<EditText
+    android:id="@+id/etDato"
+    android:layout_width="329dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="" />
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:text="Siguiente" />
+
+
+</LinearLayout>

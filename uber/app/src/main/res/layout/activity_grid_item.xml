@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Alejandro"
+        android:textColor="#333" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivEstrella"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:src="@drawable/es1" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Alejandro"
+        android:textColor="#333" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/tvCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Codigo"
+        android:textColor="#333" />
+</LinearLayout>
+

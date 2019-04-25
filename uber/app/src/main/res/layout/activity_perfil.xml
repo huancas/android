@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.PerfilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Foto de Perfil"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="159dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Ver Atenciones"
+            android:id="@+id/btnEstrella" />
+
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Username"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="257dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Rol"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/tvCargo"
+                android:layout_width="257dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Estado"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="257dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Usuario"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Celular"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_cel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Celular 2"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_cel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Email"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="146dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Fecha nacimiento"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Genero"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnersexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/sexo_arrays"
+                android:prompt="@string/sexo_prompt" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvEs"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Estado"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/estado_user_arrays"
+                android:prompt="@string/estado_user" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvCar"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Cargo"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnerCargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/cargo_arrays"
+                android:prompt="@string/cargo_pro" />
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Guardar"
+            android:id="@+id/btnSave" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PromocionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+          <!--  Imagen  -->
+            <LinearLayout
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Imagen Promocional"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="201dp"
+                    android:layout_height="142dp" />
+
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="Elegir imagen" />
+
+
+            </LinearLayout>
+            <!--  fin de Imagen -->
+            <!--  editext y texview al lado  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Titulo"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/etTitulo"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="" />
+
+            </LinearLayout>
+            <!--  /editext y texview al lado  -->
+
+
+
+
+
+
+
+
+
+            <!--   Fecha -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+            <!--  fin de fecha -->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Descripcion"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Subir"
+                android:id="@+id/btnSubir" />
+
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

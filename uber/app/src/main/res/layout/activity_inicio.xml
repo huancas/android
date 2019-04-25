@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/degradado"
+    tools:context=".Activities.Inicio">
+
+   <!-- <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/usuario" /> -->
+ <ImageView
+     android:id="@+id/imageView"
+     android:layout_marginTop="30dp"
+     android:layout_width="239dp"
+     android:layout_height="142dp"
+     android:layout_gravity="center_horizontal"
+     android:src="@drawable/user" />
+
+
+    <EditText
+        android:id="@+id/TV_usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Usuario"
+        android:drawableLeft="@mipmap/ic_user2"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/TV_pas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/ic_candado"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="20dp"
+       android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:text="Guardar Sesion "/>
+      <Switch
+          android:id="@+id/simpleSwitch"
+          android:layout_weight="1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Iniciar"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_olvido"
+        android:textColor="#CD5C5C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="olvidé mi clave"
+        android:layout_gravity="center"
+        android:textSize="13sp"/>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pe.progsistem.jesus.ubeprivado">
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <!-- read mensages -->
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- sistema operativo se ha inicilizado -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Inicio"></activity>
+        <activity android:name=".Menu" />
+        <activity
+            android:name=".Activities.Principal"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Main2Activity" />
+        <!-- A child of the principal activity -->
+        <activity
+            android:name=".Activities.DetalleActivity"
+            android:parentActivityName=".Activities.Principal">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.progsistem.jesus.ubeprivado.Activities.Principal" />
+        </activity>
+        <activity android:name=".Activities.MipublicacionActivity" />
+        <activity android:name=".Activities.FotosActivity" />
+        <activity android:name=".Activities.AtencionActivity" />
+        <activity android:name=".Activities.PerfilActivity" />
+        <activity android:name=".Activities.PromocionActivity" />
+        <activity android:name=".Activities.DetalleAtencionActivity" />
+        <activity android:name=".Activities.RecuperacionActivity" />
+        <activity android:name=".Activities.SedeActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.Mapszona"
+            android:label="@string/title_activity_mapszona" />
+        <activity android:name=".Activities.WebViewActivity" />
+        <activity android:name=".Activities.DetallePedido" />
+        <activity android:name=".Activities.RegistroChofer" />
+        <activity
+            android:name=".Activities.RegistroPrincipal"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".util.MyReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.MenuRegistroActivity"></activity>
+    </application>
+
+</manifest>

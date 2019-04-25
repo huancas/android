@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Telefono"
+        android:id="@+id/telefono"
+        app:showAsAction="always"
+
+        android:icon="@mipmap/ic_cal"/>
+    <item android:title="Camara"
+        android:id="@+id/camara"
+        android:icon="@mipmap/ic_perfil"
+        app:showAsAction="always" />
+
+</menu>

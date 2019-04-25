@@ -1,0 +1,212 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/artista"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Foto de Perfil"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagenProfile"
+                android:layout_width="167dp"
+                android:layout_height="142dp" />
+
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Elegir imagen" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Username"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="257dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Usuario"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="257dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Celular"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCel"
+                android:layout_width="257dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Celular 2"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCel2"
+                android:layout_width="262dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Email"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="262dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:text="Nombre"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Editar Perfil" />
+
+            <Button
+                android:id="@+id/btnPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Cambiar Clave" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

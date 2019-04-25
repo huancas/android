@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">App Uber</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="link"><a href="https://www.google.pl/">Google</a></string>
+    <string name="link2"><a href="https://api.whatsapp.com/send?phone=51997593971&amp;text=&amp;source=&amp;data=">Watsapp</a></string>
+
+    <string name="sexo_prompt">Elige tu genero</string>
+    <string-array name="sexo_arrays">
+        <item>MASCULINO</item>
+        <item>FEMENINO</item>
+        <item>OTRO</item>
+    </string-array>
+
+
+    <string name="estado_pro">Elige tu Estado</string>
+    <string-array name="estado_arrays">
+        <item>DISPONIBLE</item>
+        <item>OCUPADO</item>
+        <item>INDISPONIBLE</item>
+    </string-array>
+
+    <string name="estado_user">Elige Estado</string>
+    <string-array name="estado_user_arrays">
+        <item>ACTIVO</item>
+        <item>INACTIVO</item>
+    </string-array>
+
+    <string name="tipopago_pro">Elige tu Estado</string>
+    <string-array name="tipopago_arrays">
+        <item>PAGADO</item>
+        <item>GRATIS</item>
+    </string-array>
+
+    <string name="cargo_pro">Elige Cargo</string>
+    <string-array name="cargo_arrays">
+        <item>CLIENTE</item>
+        <item>TRABAJADOR</item>
+        <item>ADMINISTRADOR</item>
+    </string-array>
+
+    <string name="tipocantidad_pro">Elige tu Estado</string>
+    <string-array name="tipocantidad_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mapszona">Map</string>
+</resources>

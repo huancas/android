@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:src="@drawable/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#3a33ff"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            android:text="Clave Actual"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etCActual"
+            android:layout_width="329dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            android:text="Nueva Clave"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etCNueva"
+            android:layout_width="329dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            android:text="Repita Clave"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etCRepite"
+            android:layout_width="329dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_fire"
+            android:text="Guardar"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/btn_cancel"
+            android:text="Cancelar"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

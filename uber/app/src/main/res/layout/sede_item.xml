@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="3dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvSede"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sede" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDescripcion"
+                    android:layout_width="263dp"
+                    android:layout_height="40dp"
+                    android:text="descripcion"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tvCel"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="cel"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivCat"
+                android:layout_width="113dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
