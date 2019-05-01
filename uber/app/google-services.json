@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "167249739327",
+    "firebase_url": "https://uberapp-52c61.firebaseio.com",
+    "project_id": "uberapp-52c61",
+    "storage_bucket": "uberapp-52c61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167249739327:android:dfc0dfa1444b849b",
+        "android_client_info": {
+          "package_name": "pe.progsistem.jesus.ubeprivado"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167249739327-uq3pmd6c674rsvmjkjoeqrfc8h9k4t3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.progsistem.jesus.ubeprivado",
+            "certificate_hash": "cf1352cb49ebf8df97f028d667e8206f04142b69"
+          }
+        },
+        {
+          "client_id": "167249739327-50q82sp4evm20nugemebd2u9gjts2lje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.progsistem.jesus.ubeprivado",
+            "certificate_hash": "e27332212ecc4aea23a7fc47c67cff9c532aa42d"
+          }
+        },
+        {
+          "client_id": "167249739327-iqi5ketu56okvt526ho8p33v8kcktv8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAghIX16yPJbuQzmeXACNksesZ7CN728ZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167249739327-iqi5ketu56okvt526ho8p33v8kcktv8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

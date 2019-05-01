@@ -2,6 +2,7 @@ package pe.progsistem.jesus.ubeprivado.beans;
 
 public class User {
     private String idu;
+    private String token;
     private String nombre;
     private String sexo;
     private String fecha_nac;
@@ -15,8 +16,9 @@ public class User {
     private String ultima_vez;
     private String cargo_idc;
 
-    public User(String idu, String nombre, String sexo, String fecha_nac, String cel, String cel2, String nom_user, String email, String foto_perfil, String estado, String fecha_inicio, String ultima_vez, String cargo_idc) {
+    public User(String idu, String token,String nombre, String sexo, String fecha_nac, String cel, String cel2, String nom_user, String email, String foto_perfil, String estado, String fecha_inicio, String ultima_vez, String cargo_idc) {
         this.idu = idu;
+        this.token = token;
         this.nombre = nombre;
         this.sexo = sexo;
         this.fecha_nac = fecha_nac;
@@ -40,6 +42,14 @@ public class User {
 
     public void setIdu(String idu) {
         this.idu = idu;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getSexo() {

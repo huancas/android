@@ -119,7 +119,7 @@ public class UsuariosFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             // progressBar.setVisibility(GONE);
-          Toast.makeText(getContext(), s, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), s, Toast.LENGTH_SHORT).show();
 
 
             try {
@@ -170,7 +170,8 @@ public class UsuariosFragment extends Fragment {
                     obj.getString("estado"),
                     obj.getString("fecha_in"),
                     obj.getString("ul_vez"),
-                    obj.getString("cargo")
+                    obj.getString("cargo"),
+                    obj.getString("token")
 
             ));
 
@@ -232,7 +233,7 @@ public class UsuariosFragment extends Fragment {
                 lista.add(name);
                 lista.add(url_pri);
                 lista.add(cod_usu);
-              //  Intent intent = new Intent(getActivity(),DetalleActivity.class);
+                //  Intent intent = new Intent(getActivity(),DetalleActivity.class);
 
                 if(cargo_real.equals("TRABAJADOR")) {
 
@@ -243,7 +244,7 @@ public class UsuariosFragment extends Fragment {
                 }
 
                 if(cargo_real.equals("ADMINISTRADOR")){
-                     Bundle bund = new Bundle();
+                    Bundle bund = new Bundle();
                     bund.putString("idu",id_cli);
                     bund.putString("cargo","ADMINISTRADOR");
 
@@ -252,7 +253,7 @@ public class UsuariosFragment extends Fragment {
                     startActivity(i);
 
 
-                   }
+                }
 
             }
         }));
@@ -260,6 +261,4 @@ public class UsuariosFragment extends Fragment {
 
     }
 
-
 }
-

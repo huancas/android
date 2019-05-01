@@ -42,7 +42,10 @@ dependencies {
     //location
     implementation 'com.google.android.gms:play-services-location:15.0.1'
 
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    implementation 'com.google.firebase:firebase-messaging:17.4.0'
+
     implementation 'de.hdodenhof:circleimageview:1.3.0' //Imagen Circular
-
-
 }
+apply plugin: 'com.google.gms.google-services'

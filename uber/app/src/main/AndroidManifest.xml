@@ -35,7 +35,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Inicio"></activity>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/googleg_standard_color_18" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name=".Activities.Inicio" />
         <activity android:name=".Menu" />
         <activity
             android:name=".Activities.Principal"
@@ -67,7 +74,7 @@
              Note that the API key is linked to the encryption key used to sign the APK.
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -99,7 +106,12 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Activities.MenuRegistroActivity"></activity>
+        <activity android:name=".Activities.MenuRegistroActivity" />
+
+        <service
+            android:name=".FCMService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -25,6 +26,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 
 import java.io.ByteArrayOutputStream;
@@ -35,6 +40,7 @@ import java.util.Map;
 
 
 import pe.progsistem.jesus.ubeprivado.Activities.Inicio;
+import pe.progsistem.jesus.ubeprivado.Activities.Principal;
 import pe.progsistem.jesus.ubeprivado.conexion.Conexion;
 import pe.progsistem.jesus.ubeprivado.conexion.FuncionesApp;
 
@@ -51,6 +57,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
     final int mes = c.get(Calendar.MONTH);
     final int dia = c.get(Calendar.DAY_OF_MONTH);
     final int anio = c.get(Calendar.YEAR);
+
+    private String token;
 
     //Widgets
     EditText etFecha;
@@ -132,6 +140,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         title.setOnClickListener(this);
 
         spgenero = (Spinner) findViewById(R.id.spinnersexo);
+
+        getTocken();
 
     }
 
@@ -216,7 +226,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
 
 
                 String mGenero = String.valueOf(spgenero.getSelectedItem());
-              //Creación de parámetros
+                //Creación de parámetros
                 Map<String,String> params = new Hashtable<String, String>();
 
                 //Agregando de parámetros
@@ -231,7 +241,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
                 params.put("password",mPassword);
                 params.put("cargo","PASAJERO");
                 params.put(KEY_IMAGEN, imagen);
-               //Parámetros de retorno
+                params.put("token", token);
+                //Parámetros de retorno
                 return params;
             }
         };
@@ -248,7 +259,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         if(bot.equals("foto")){
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);}
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);}
 
     }
 
@@ -318,4 +329,36 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         }
 
     }
+
+    public void getTocken(){
+        System.out.println("se ejecuta pi");
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                        if (!task.isSuccessful()) {
+                            //Log.w(TAG, "getInstanceId failed", task.getException());
+                            System.out.println("no pasa naaa p ctm");
+                            return;
+                        }
+
+                        // Get new Instance ID token
+                        String token = task.getResult().getToken();
+
+                        // Log and toast
+                        String msg = token;
+                        System.out.println("*/*/*/*/**/*/*"+msg);
+                        System.out.println("si pe llama");
+                        dart(token);
+                        // Log.d(TAG, msg);
+                        System.out.println("*/*/*/*/**/*/*"+msg);
+                        System.out.println("si pe llama");
+                    }
+                });
+    }
+    public void dart(String tok){
+        this.token = tok;
+    }
+
+
 }

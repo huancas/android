@@ -43,7 +43,7 @@
                     android:id="@+id/imageView"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
-                    android:background="@drawable/ic_crop_free_black_150dp"
+                    android:src="@drawable/ic_crop_free_black_150dp"
                     android:layout_gravity="center_horizontal" />
 
 
@@ -144,7 +144,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:src="@mipmap/ic_calen"
+                    android:src="@drawable/ic_date_range_black_24dp"
                     tools:ignore="ContentDescription" />
 
 
