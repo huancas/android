@@ -20,12 +20,16 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.google.android.gms.maps.model.Circle;
 import com.squareup.picasso.Picasso;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.Calendar;
 import java.util.HashMap;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 import pe.progsistem.jesus.ubeprivado.Frgaments.FragmentViewVideoExtended;
 import pe.progsistem.jesus.ubeprivado.Frgaments.ViewImageExtended;
 import pe.progsistem.jesus.ubeprivado.R;
@@ -52,7 +56,7 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
     String nombre;
     private TextView  tvNombre, tvDescripcion, tvSend,tvPrecio;
 
-    ImageView imageView;
+    CircleImageView imageView;
 
 
     /***************************** widget ****************************/
@@ -143,7 +147,7 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
 
 
 
-        imageView =(ImageView) findViewById(R.id.imageView);
+        imageView =(CircleImageView) findViewById(R.id.imageView);
         tvNombre.setText(nombre);
         tvDescripcion.setText(descrip);
         final String url_foto = pu.getImg_carro();
@@ -360,16 +364,12 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
             // Finally, add the ImageView to layout
             rl.addView(iv);
 
-
             // String ruta =RUTAIMG+url_pri;
             // Picasso.get().load(ruta).into(imageView);
-
 
         }
 
         // Datos a mostrar
-
-
 
 
     }

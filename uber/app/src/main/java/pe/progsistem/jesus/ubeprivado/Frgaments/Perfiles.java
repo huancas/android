@@ -33,6 +33,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import pe.progsistem.jesus.ubeprivado.Activities.PerfilActivity;
 import pe.progsistem.jesus.ubeprivado.R;
 import pe.progsistem.jesus.ubeprivado.conexion.FuncionesApp;
@@ -51,7 +52,7 @@ public class Perfiles extends Fragment {
     TextView art, tvname, tvapp, tvemail, tvusuario, tvusername, tvcel, tvcel2;
 
     Button btnEdit, btnPass;
-    ImageView logo;
+    CircleImageView logo;
     private Bitmap bitmap;
 
     private Button btnBuscar;
@@ -100,7 +101,7 @@ public class Perfiles extends Fragment {
         tvemail.setText(email);
 
         //tvapp.setText(edad);
-        logo = (ImageView) root.findViewById(R.id.imagenProfile);
+        logo = (CircleImageView) root.findViewById(R.id.imagenProfile);
         //  logo.setImageResource(R.drawable.lady);
         // downloadFile(imageHttpAddress);
         btnEdit.setOnClickListener(new View.OnClickListener() {
