@@ -249,6 +249,7 @@ public class CarroFragment extends Fragment {
                 pu.setCategoria(item.getCategoria());
                 pu.setImg_carro(item.getImg_carro());
                 pu.setDescripcion(item.getDescripcion());
+                pu.setPorcentage(item.getPorcentage());
                 // pu.setSede(new Sede(item.getSede().getSede_id(),item.getSede().getSede_name()));
 
 
