@@ -1,6 +1,7 @@
 package pe.progsistem.jesus.ubeprivado.Activities;
 import android.Manifest;
 import android.app.AlertDialog;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -25,6 +26,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.SearchView;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -374,10 +376,11 @@ public class Principal extends FragmentActivity
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                show_notification();
             }
         });
         //ocultamos el boton fabbutoon
-        fab.hide();
+       // fab.hide();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -1827,6 +1830,26 @@ public class Principal extends FragmentActivity
 
                 break;
         }
+    }
+
+    private void show_notification(){
+        NotificationCompat.Builder mBuilder;
+        NotificationManager mNotifyMgr =(NotificationManager) getApplicationContext().getSystemService(NOTIFICATION_SERVICE);
+        int icono = R.mipmap.ic_launcher;
+        Intent i=new Intent(Principal.this,Inicio.class); //ultimo class donde se mostrara
+        PendingIntent pendingIntent = PendingIntent.getActivity(Principal.this, 0, i, 0);
+
+        mBuilder =new NotificationCompat.Builder(getApplicationContext())
+                .setContentIntent(pendingIntent)
+                .setSmallIcon(icono)
+                .setContentTitle("Titulo")
+                .setContentText("Hola que tal?")
+                .setVibrate(new long[] {100, 250, 100, 500})
+                .setAutoCancel(true);
+
+
+
+        mNotifyMgr.notify(1, mBuilder.build());
     }
 }
 

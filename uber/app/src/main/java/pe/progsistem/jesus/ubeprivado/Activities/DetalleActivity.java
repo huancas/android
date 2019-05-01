@@ -1,8 +1,12 @@
 package pe.progsistem.jesus.ubeprivado.Activities;
 import android.app.DatePickerDialog;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -127,7 +131,7 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
 
 
 
-        tvSend = (TextView) findViewById(R.id.tvSend);
+
 
 
 
@@ -139,6 +143,7 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
 
                 tvSend=(TextView) findViewById(R.id.tvSend);
         tvPrecio=(TextView) findViewById(R.id.tvPrecio);
+
         tvPrecio.setText(precio);
 
 
@@ -201,6 +206,31 @@ public class DetalleActivity extends AppCompatActivity implements View.OnClickLi
                 }else{
                     lprog.setVisibility(View.GONE);
                 }
+            }
+        });
+
+        tvSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                    NotificationCompat.Builder mBuilder;
+                    NotificationManager mNotifyMgr =(NotificationManager) getApplicationContext().getSystemService(NOTIFICATION_SERVICE);
+                    int icono = R.mipmap.ic_launcher;
+                    Intent i=new Intent(DetalleActivity.this,Inicio.class); //ultimo class donde se mostrara
+                    PendingIntent pendingIntent = PendingIntent.getActivity(DetalleActivity.this, 0, i, 0);
+
+                    mBuilder =new NotificationCompat.Builder(getApplicationContext())
+                            .setContentIntent(pendingIntent)
+                            .setSmallIcon(icono)
+                            .setContentTitle("Titulo")
+                            .setContentText("Hola que tal?")
+                            .setVibrate(new long[] {100, 250, 100, 500})
+                            .setAutoCancel(true);
+
+
+
+                    mNotifyMgr.notify(1, mBuilder.build());
+
             }
         });
 
