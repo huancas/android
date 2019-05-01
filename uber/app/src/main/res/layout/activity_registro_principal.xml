@@ -11,32 +11,36 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_gravity="center_vertical"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/taxi"/>
 
+            <TextView
+                android:id="@+id/tvSugerencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="Ingrese su numero de Celular" />
 
-        <TextView
-            android:id="@+id/tvSugerencia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
+            <EditText
+                android:id="@+id/etDato"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="9"
+                android:layout_width="200dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
 
-            android:text="Ingrese su numero de Celular" />
-
-        <EditText
-            android:id="@+id/etDato"
-            android:layout_gravity="center_horizontal"
-
-            android:maxLength="9"
-            android:layout_width="200dp"
-            android:layout_marginRight="10dp"
-            android:inputType="number"
-            android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/tvMensaje"
                 android:layout_width="wrap_content"
@@ -47,13 +51,14 @@
                 android:textStyle="bold"
                 android:text="" />
 
-        <Button
-            android:id="@+id/btnSiguiente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/colorAccent"
-            android:text="Siguiente" />
+            <Button
+                android:id="@+id/btnSiguiente"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Siguiente" />
         </LinearLayout>
 
     </LinearLayout>

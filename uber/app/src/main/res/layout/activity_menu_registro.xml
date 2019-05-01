@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".Activities.MenuRegistroActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
+        android:gravity="center"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:text="Registrarse como:"
@@ -26,9 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-
             android:backgroundTint="@color/colorAccent"
             android:background="@drawable/borde_redondo"
+            android:textColor="#FFFFFF"
             android:text="Pasajero" />
 
         <Button
@@ -38,6 +39,7 @@
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/colorAccent"
             android:background="@drawable/borde_redondo"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:text="Conductor" />
 
@@ -48,6 +50,7 @@
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/colorAccent"
             android:background="@drawable/borde_redondo"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:text="Empresa" />
 
