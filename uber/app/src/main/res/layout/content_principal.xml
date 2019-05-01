@@ -2,97 +2,117 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Activities.Principal"
-    tools:showIn="@layout/app_bar_principal">
+    tools:showIn="@layout/app_bar_principal"
+    android:layout_margin="5dp">
+
    <!-- <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"> -->
+
     <LinearLayout
         android:id="@+id/llheader"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_margin="5dp"
-        >
 
-        <TextView
-            android:id="@+id/editText"
-            android:layout_width="327dp"
-            android:layout_height="50dp"
-            android:hint="Partida" />
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp">
 
-        <TextView
-            android:id="@+id/tvUbic"
-            android:layout_width="48dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
-            android:drawableRight="@mipmap/ic_miubicacion"
-            android:drawablePadding="5dp"
-            />
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:hint="Partida" />
+
+                <TextView
+                    android:id="@+id/tvUbic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:drawableRight="@drawable/ic_my_location_black_24dp"
+                    android:drawablePadding="5dp" />
+
+            </LinearLayout>
 
         <!--  android:maxLines="1"
                android:ellipsize="marquee" -->
 
+        </android.support.v7.widget.CardView>
 
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-       >
-
-        <TextView
-            android:id="@+id/et_destino"
-            android:layout_width="327dp"
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Destino" />
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp">
 
+            <TextView
+                android:id="@+id/et_destino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:hint="Destino" />
 
+            <!--  android:maxLines="1"
+              android:ellipsize="marquee" -->
 
-        <!--  android:maxLines="1"
-          android:ellipsize="marquee" -->
+        </android.support.v7.widget.CardView>
 
-
-
-    </android.support.v7.widget.CardView>
-
-
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/button"
-            android:layout_width="149dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent"
-            android:text="Buscar" />
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Buscar" />
 
 
-        <Button
-            android:id="@+id/bt_ruta"
-            android:layout_width="203dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:backgroundTint="@color/colorAccent"
+            <Button
+                android:id="@+id/bt_ruta"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Ruta" />
 
-            android:text="Ruta" />
-    </LinearLayout>
+        </LinearLayout>
 
 
 
@@ -106,7 +126,9 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Activities.Mapszona" >
+        tools:context=".Activities.Mapszona"
+        android:layout_margin="10dp">
+
         <FrameLayout
             android:layout_gravity="bottom"
             android:id="@+id/content_frame"

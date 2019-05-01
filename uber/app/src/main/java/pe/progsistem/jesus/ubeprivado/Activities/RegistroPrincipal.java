@@ -70,7 +70,7 @@ public class RegistroPrincipal extends AppCompatActivity implements MyReceiver.L
         tvError = (TextView) findViewById(R.id.tvMensaje);
         btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
 
-        tvAviso.setText("Ingrese su numero de Celular");
+        tvAviso.setText("Ingrese su número de Celular");
 
 
 
