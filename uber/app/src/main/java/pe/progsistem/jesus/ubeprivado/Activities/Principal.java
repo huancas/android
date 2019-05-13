@@ -286,7 +286,6 @@ public class Principal extends FragmentActivity
                 try {
                     // buscardir();
 
-
                     Intent aboutIntent = new Intent(Principal.this, WebViewActivity.class);
                     String a =  input.getText().toString();
                     String b=  et_destino.getText().toString();
@@ -309,6 +308,7 @@ public class Principal extends FragmentActivity
                 rellenarPartida(view);
             }
         });
+
         et_destino.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
